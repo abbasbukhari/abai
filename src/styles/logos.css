@@ -1,0 +1,94 @@
+/* ABAI logomark + tech-stack styles */
+
+.abai-lockup .abai-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  display: block;
+}
+.abai-lockup .abai-tag {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-top: 2px;
+}
+
+.nav .brand .abai-lockup .abai-name { color: #fff; transition: color var(--t); }
+.nav .brand .abai-lockup .abai-tag  { color: rgba(255,255,255,0.55); transition: color var(--t); }
+.nav .brand svg { color: #fff; transition: color var(--t); }
+.nav.is-scrolled .brand .abai-lockup .abai-name { color: var(--text); }
+.nav.is-scrolled .brand .abai-lockup .abai-tag  { color: var(--muted); }
+.nav.is-scrolled .brand svg { color: var(--text); }
+
+.footer .abai-lockup svg { color: #fff; }
+.footer .abai-lockup .abai-name { color: #fff; font-size: 26px; }
+.footer .abai-lockup .abai-tag { color: rgba(255,255,255,0.5); }
+
+.techstack {
+  background: var(--offwhite);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.techstack-head {
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+.techstack-title {
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  margin-top: 12px;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+@media (max-width: 980px) { .techstack-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 600px) { .techstack-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.techstack-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 20px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+  transition: background 200ms ease, color 200ms ease;
+  color: var(--text);
+}
+.techstack-cell:hover {
+  background: var(--navy);
+  color: #fff;
+}
+.techstack-icon {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--offwhite);
+  flex-shrink: 0;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+.techstack-cell:hover .techstack-icon {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.16);
+}
+.techstack-name {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
