@@ -1,11 +1,13 @@
-import { PRICING } from '../data'
+import { PRICING } from "../data";
 
 export default function PricingSection() {
   return (
     <section className="section-pad" id="pricing">
       <div className="container">
         <div className="reveal">
-          <h2 className="h-section" style={{ marginBottom: 48 }}>Pricing</h2>
+          <h2 className="h-section" style={{ marginBottom: 48 }}>
+            Pricing
+          </h2>
           <div className="pricing-grid">
             {PRICING.map((plan, i) => (
               <div key={i} className="pricing-card">
@@ -25,5 +27,5 @@ export default function PricingSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -89,7 +89,11 @@ export const EXAMPLE_INDUSTRIES = [
 ];
 
 export const CREDENTIALS = [
-  { org: "Middlesex University", role: "MSc Computer Science", year: "Distinction" },
+  {
+    org: "Middlesex University",
+    role: "MSc Computer Science",
+    year: "Distinction",
+  },
   { org: "Microsoft", role: "Datacenter Technician", year: "2 years" },
   { org: "FDM Group", role: "IT Consultant · TD Bank", year: "Enterprise" },
   { org: "Rogers Communications", role: "Technology role", year: "Telecom" },

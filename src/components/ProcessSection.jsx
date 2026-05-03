@@ -1,11 +1,17 @@
-import { HOW_IT_WORKS } from '../data'
+import { HOW_IT_WORKS } from "../data";
 
 export default function ProcessSection() {
   return (
-    <section className="section-pad" id="process" style={{ background: '#FAFAF8' }}>
+    <section
+      className="section-pad"
+      id="process"
+      style={{ background: "#FAFAF8" }}
+    >
       <div className="container">
         <div className="reveal">
-          <h2 className="h-section" style={{ marginBottom: 48 }}>How it works</h2>
+          <h2 className="h-section" style={{ marginBottom: 48 }}>
+            How it works
+          </h2>
           <div className="process-grid">
             {HOW_IT_WORKS.map((step, i) => (
               <div key={i} className="process-card">
@@ -18,5 +24,5 @@ export default function ProcessSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
