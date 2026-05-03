@@ -1,7 +1,7 @@
-export default function Icon({ name, size = 20, stroke = 1.5 }) {
+export default function Icon({ name, size = 20, stroke = 1.5, color = 'currentColor' }) {
   const props = {
     width: size, height: size, viewBox: '0 0 24 24', fill: 'none',
-    stroke: 'currentColor', strokeWidth: stroke,
+    stroke: color, strokeWidth: stroke,
     strokeLinecap: 'round', strokeLinejoin: 'round',
   }
   switch (name) {
