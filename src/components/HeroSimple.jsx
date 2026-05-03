@@ -30,10 +30,9 @@ export default function Hero({ onCtaClick }) {
                 display: "flex",
                 justifyContent: "center",
                 lineHeight: 1,
-                backgroundColor: "rgba(255, 255, 255, 0.15)",
-                color: "#fff",
-                borderColor: "#fff",
-                borderWidth: "1px"
+                backgroundColor: "#fff",
+                color: "#0F1629",
+                borderColor: "#fff"
               }}
             >
               Call: 905 462 8072
