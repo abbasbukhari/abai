@@ -1,17 +1,11 @@
 import { useRef } from 'react'
 import { useReveal } from './hooks/useReveal'
-import SystemBar from './components/SystemBar'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import { StatusRibbon } from './components/TechChrome'
-import Coverage from './components/Coverage'
-import Benefits from './components/Benefits'
-import Industries from './components/Industries'
-import TechStackStrip from './components/TechLogos'
-import HowItWorks from './components/HowItWorks'
-import Services from './components/Services'
-import About from './components/About'
-import Trust from './components/Trust'
+import HeroSimple from './components/HeroSimple'
+import ValueSection from './components/ValueSection'
+import ProcessSection from './components/ProcessSection'
+import PricingSection from './components/PricingSection'
+import IndustriesSection from './components/IndustriesSection'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -26,18 +20,12 @@ export default function App() {
 
   return (
     <>
-      <SystemBar />
       <Navbar onCtaClick={scrollToForm} />
-      <Hero onCtaClick={scrollToForm} />
-      <StatusRibbon />
-      <Coverage />
-      <Benefits />
-      <Industries />
-      <TechStackStrip />
-      <HowItWorks />
-      <Services />
-      <About />
-      <Trust />
+      <HeroSimple onCtaClick={scrollToForm} />
+      <ValueSection />
+      <ProcessSection />
+      <PricingSection />
+      <IndustriesSection />
       <Contact formRef={formRef} />
       <Footer />
     </>
