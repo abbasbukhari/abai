@@ -16,7 +16,7 @@ export function ABAILockup({ size = 28, tagline = 'Consulting' }) {
       <ABAILogomark size={size} />
       <span className="abai-wordmark">
         <span className="abai-name">ABAI</span>
-        {tagline && <span className="abai-tag">{tagline}</span>}
+        {tagline && <><span> </span><span className="abai-tag">{tagline}</span></>}
       </span>
     </span>
   )
