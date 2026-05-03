@@ -11,6 +11,7 @@ Private, on-premise AI for Ontario small businesses. This is the marketing websi
 ABAI Consulting installs custom AI systems that run entirely on your hardware. Your data never leaves your office. We work with law firms, medical practices, accounting firms, and other regulated businesses in Ontario that require strict data privacy.
 
 **Services:**
+
 - Initial setup & installation (same-day delivery)
 - Ongoing support & optimization
 - Custom AI training for your specific workflows
@@ -44,7 +45,7 @@ src/
     Trust.jsx           # Compliance/security highlights
     Contact.jsx         # Contact form with validation
     Footer.jsx          # Footer with nav links
-    
+
     SystemBar.jsx       # Fixed top system bar (UTC clock)
     IDEPane.jsx         # IDE-style component with tabs
     TechChrome.jsx      # Terminal, code blocks, syntax highlighting
@@ -63,7 +64,7 @@ src/
   hooks/
     useReveal.js        # IntersectionObserver scroll reveal
     useScrolled.js      # Scroll position tracker for nav
-  
+
   data.js              # All content constants (pricing, credentials, tech stack)
   App.jsx              # Root component
   main.jsx             # Vite entry point
@@ -121,6 +122,7 @@ The site auto-deploys via GitHub Actions on every push to `main`.
 ### Initial Setup (one-time)
 
 1. **DNS Configuration** (Dynadot or your registrar):
+
    ```
    A records:  185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
    CNAME (www): abbasbukhari.github.io
@@ -174,10 +176,10 @@ export const SERVICE_GROUPS = [
     id: "setup",
     label: "Setup",
     items: [
-      { n: 1, name: "Basic Installation", price: "Starting at $500", /* ... */ },
+      { n: 1, name: "Basic Installation", price: "Starting at $500" /* ... */ },
       // ...
-    ]
-  }
+    ],
+  },
 ];
 ```
 
