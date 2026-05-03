@@ -1076,3 +1076,58 @@
   .h-section { font-size: clamp(26px, 7vw, 40px); }
   .lede { font-size: 16px; }
 }
+
+/* ── Ultra-mobile (320px+) optimization ────────────────────── */
+
+/* Ensure touch targets are minimum 44x44px */
+@media (max-width: 480px) {
+  .btn { height: 48px; padding: 0 18px; font-size: 15px; }
+  .btn-sm { height: 44px; padding: 0 16px; }
+
+  /* Form inputs need 44px+ height */
+  .field input, .field select, .field textarea {
+    padding: 14px 16px;
+    font-size: 16px; /* prevents iOS auto-zoom on focus */
+  }
+  .field textarea { min-height: 140px; }
+
+  /* Hero CTA buttons full-width, generous tap area */
+  .hero-ctas .btn { height: 50px; }
+
+  /* Reduce nav padding */
+  .nav-inner { height: 68px; }
+
+  /* Contact form padding */
+  .contact-form { padding: 24px 20px; }
+  .contact-info { margin-bottom: 24px; }
+
+  /* Same-day callout tighter */
+  .same-day { padding: 20px 18px; }
+  .same-day-text { font-size: clamp(20px, 5vw, 28px); }
+
+  /* Modal/drawer menu more readable */
+  .nav-mobile-link { padding: 16px 12px; font-size: 16px; }
+
+  /* Reduce hero padding on very small phones */
+  .hero { padding: 80px 0 56px; }
+
+  /* Simplify IDE pane area (already hidden but leave space) */
+  .hero-grid { gap: 32px; }
+
+  /* Contact line items spacing */
+  .contact-line { padding: 18px 0; }
+  .contact-line-icon { width: 40px; height: 40px; }
+
+  /* Service tabs more compact */
+  .svc-tab { padding: 12px 8px; font-size: 14px; }
+
+  /* Resume card more breathable */
+  .resume-photo { height: 240px; }
+}
+
+/* Landscape mode (very wide but short) - adjust hero */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero { padding: 40px 0 40px; min-height: auto; }
+  .hero h1 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 16px; }
+  .hero-sub { font-size: 15px; margin-bottom: 20px; }
+}
