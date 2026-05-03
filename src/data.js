@@ -55,7 +55,7 @@ export const PRICING = [
   },
   {
     name: "Quick Start",
-    price: "$500–$1,000",
+    price: "From $500",
     desc: "AI installed and your team trained. Same day.",
     outcome: "Live with AI in 48 hours. Zero disruption.",
     includes: [
@@ -70,7 +70,7 @@ export const PRICING = [
   },
   {
     name: "Strategic Partnership",
-    price: "$2,500–$5,000 setup",
+    price: "From $2.5K",
     desc: "Full-team rollout with ongoing optimization and monthly strategy.",
     outcome: "Transform your entire workflow with continuous improvement.",
     includes: [
