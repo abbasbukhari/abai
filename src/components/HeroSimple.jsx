@@ -1,5 +1,6 @@
 import { ABAILockup } from "./Logo";
 import Icon from "./Icon";
+import IDEPane from "./IDEPane";
 
 export default function Hero({ onCtaClick }) {
   return (
@@ -10,6 +11,7 @@ export default function Hero({ onCtaClick }) {
           <p className="hero-simple-sub">
             Install AI on your hardware. Your data never leaves your office.
           </p>
+          <IDEPane />
           <div className="hero-simple-ctas">
             <button
               className="btn btn-primary"
