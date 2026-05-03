@@ -6,9 +6,9 @@ export default function PricingSection() {
       <div className="container">
         <div className="reveal">
           <div className="pricing-header-section">
-            <h2 className="h-section">Pricing that scales with you</h2>
+            <h2 className="h-section">Simple, fair pricing</h2>
             <p className="pricing-subhead">
-              From your first consultation to enterprise deployment. Clear costs, no surprises.
+              Start with a free assessment. Choose the plan that fits your needs. Scale as you grow.
             </p>
           </div>
 
@@ -44,10 +44,10 @@ export default function PricingSection() {
           </div>
 
           <div className="pricing-guarantee">
-            <h3>Our guarantee</h3>
+            <h3>Ready to get started?</h3>
             <p>
-              Not happy with your implementation? Get your money back within 30 days.
-              We're confident in our work — and you should be too.
+              Schedule your free assessment today. No obligation. We'll spend 30 minutes
+              understanding your workflow and showing you exactly how AI can help your team.
             </p>
           </div>
         </div>
