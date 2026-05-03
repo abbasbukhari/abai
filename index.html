@@ -8,23 +8,10 @@
     <title>ABAI Consulting — Private AI for Small Business</title>
 
     <!-- Security headers via meta (GitHub Pages static host) -->
-    <!-- Prevents this page being embedded in iframes (clickjacking) -->
     <meta http-equiv="X-Frame-Options" content="DENY" />
-    <!-- Prevents browser sniffing the content type -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <!-- Only send origin in referer header, never full URL -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <!-- Forces HTTPS for all sub-resources, blocks mixed content -->
-    <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      script-src 'self';
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com;
-      img-src 'self' data: blob:;
-      connect-src 'self';
-      frame-ancestors 'none';
-      upgrade-insecure-requests;
-    " />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none';" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
