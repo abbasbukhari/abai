@@ -23,8 +23,18 @@ export default function Hero({ onCtaClick }) {
             </button>
             <a
               href="tel:9054628072"
-              className="btn btn-ghost"
-              style={{ height: 48, fontSize: 15, display: "flex", justifyContent: "center", lineHeight: 1 }}
+              className="btn"
+              style={{
+                height: 48,
+                fontSize: 15,
+                display: "flex",
+                justifyContent: "center",
+                lineHeight: 1,
+                backgroundColor: "rgba(255, 255, 255, 0.15)",
+                color: "#fff",
+                borderColor: "#fff",
+                borderWidth: "1px"
+              }}
             >
               Call: 905 462 8072
             </a>
